@@ -53,7 +53,7 @@ class MobileBankApiTestV1 {
                 // специализированные проверки - лучше
                 .contentType(ContentType.JSON)
                 .body("", hasSize(3))
-                .body("[1].currency", equalTo("USB"));
+                .body("[1].currency", equalTo("USD"));
     }
 }
 
